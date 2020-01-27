@@ -2,7 +2,7 @@ var superagent = require('superagent');
 
 var getip = function (callback) {
   superagent
-    .get('http://ip.cn/')
+    .get('https://diagnostic.opendns.com/myip')
     .set('User-Agent', 'curl/7.37.1')
     .end(function (err, res) {
       if (err) {
